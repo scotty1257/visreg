@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="shortcut icon" href="/images/Icon-72.png" type="image/x-icon">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet">
+
+  <% rel = current_page.data.relative %>
+
+  <link rel="stylesheet" href="<% rel %>/stylesheets/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script language="JavaScript" type="text/javascript" src="<% rel %>/javascripts/all.js"></script>
+
+</head>
+
+<body id="body">
+
+ <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">VisReg</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="<% rel %>/" id="logo">VisReg</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul  class="nav navbar-nav navbar-right">
+              <li id="ul-id" class="<%= nav_active("index.html") %>"><a href="<% rel %>/">Home</a></li>
+              <li id="ul-id" class="<%= nav_active("Features/index.html") %>"><a href="<% rel %>/Features">Features</a></li>
+              <li id="ul-id" class="<%= nav_active("About/index.html") %>"><a href="<% rel %>/About">About</a></li>
+              <li id="ul-id" class="<%= nav_active("FAQ/index.html") %>"><a href="<% rel %>/FAQ">FAQ</a></li>
+              <li id="ul-id" class="<%= nav_active("Contact/index.html") %>"><a href="<% rel %>/Contact">Contact</a></li>
+              <li class="<%= nav_active("/") %>"><button id="angular-button" onclick="replaceurl()" type="button">Admin Page</button></li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div style="height:100px;"></div>
+    <div class="container">
